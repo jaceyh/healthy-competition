@@ -5,6 +5,7 @@ import './App.css';
 //import counters
 import WaterCounter from './components/WaterCounter';
 import VegCounter from './components/VegCounter';
+import ProteinCounter from './components/ProteinCounter';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <div className="counters">
         <WaterCounter />
         <VegCounter />
+        <ProteinCounter />
         </div>
       </header>
     </div>
