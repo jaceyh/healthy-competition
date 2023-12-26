@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+//import counters
 import WaterCounter from './components/WaterCounter';
+import VegCounter from './components/VegCounter';
 
 const App = () => {
   return (
@@ -10,6 +13,7 @@ const App = () => {
         <img src={logo} className="App-logo" alt="logo" />
         <div className="counters">
         <WaterCounter />
+        <VegCounter />
         </div>
       </header>
     </div>
