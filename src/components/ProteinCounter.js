@@ -1,35 +1,35 @@
 import React, { useState } from "react";
 
-const VegCounter = () => {
-  const [donny, setDonny] = useState(0);
-  const [jacey, setJacey] = useState(0);
+const ProteinCounter = () => {
+  const [donnyPro, setDonnyPro] = useState(0);
+  const [jaceyPro, setJaceyPro] = useState(0);
 
 const incrementDonny = async () => {
-    setDonny(donny + 1);
+    setDonnyPro(donnyPro + 1);
 };
 
 const decrementDonny = async () => {
-    setDonny(donny - 1);
+    setDonnyPro(donnyPro - 1);
 };
 
 const incrementJacey = async () => {
-    setJacey(jacey + 1);
+    setJaceyPro(jaceyPro + 1);
 };
 
 const decrementJacey = async () => {
-    setJacey(jacey - 1);
+    setJaceyPro(jaceyPro - 1);
 };
 
 
   return (
     <div>
     <div>
-        <p>Donny's meal/snack Veggie count is: {donny}</p>
+        <p>Donny's meal/snack Protein count is: {donnyPro}</p>
         <button onClick={incrementDonny}>+</button>
         <button onClick={decrementDonny}>-</button>
     </div>
     <div>
-        <p>Jacey's meal/snack Veggie count is: {jacey}</p>
+        <p>Jacey's meal/snack Protein count is: {jaceyPro}</p>
         <button onClick={incrementJacey}>+</button>
         <button onClick={decrementJacey}>-</button>
     </div>
@@ -37,4 +37,4 @@ const decrementJacey = async () => {
   );
 }
 
-export default VegCounter;
+export default ProteinCounter;

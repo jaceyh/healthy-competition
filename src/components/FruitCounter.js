@@ -1,35 +1,35 @@
 import React, { useState } from "react";
 
 const FruitCounter = () => {
-  const [donny, setDonny] = useState(0);
-  const [jacey, setJacey] = useState(0);
+  const [donnyFruit, setDonnyFruit] = useState(0);
+  const [jaceyFruit, setJaceyFruit] = useState(0);
 
 const incrementDonny = async () => {
-    setDonny(donny + 1);
+    setDonnyFruit(donnyFruit + 1);
 };
 
 const decrementDonny = async () => {
-    setDonny(donny - 1);
+    setDonnyFruit(donnyFruit - 1);
 };
 
 const incrementJacey = async () => {
-    setJacey(jacey + 1);
+    setJaceyFruit(jaceyFruit + 1);
 };
 
 const decrementJacey = async () => {
-    setJacey(jacey - 1);
+    setJaceyFruit(jaceyFruit - 1);
 };
 
 
   return (
     <div>
     <div>
-        <p>Donny's meal/snack Fruit count is: {donny}</p>
+        <p>Donny's meal/snack Fruit count is: {donnyFruit}</p>
         <button onClick={incrementDonny}>+</button>
         <button onClick={decrementDonny}>-</button>
     </div>
     <div>
-        <p>Jacey's meal/snack Fruit count is: {jacey}</p>
+        <p>Jacey's meal/snack Fruit count is: {jaceyFruit}</p>
         <button onClick={incrementJacey}>+</button>
         <button onClick={decrementJacey}>-</button>
     </div>
